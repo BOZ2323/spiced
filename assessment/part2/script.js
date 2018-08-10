@@ -73,12 +73,7 @@ const actors = [
       }  else {
         return false;
       };
-    },
-    getActorByName: function(param){
-      if(this.name == param){
-        return param;
-    };
-  },
+    }
 },
   jlaw = {
     name: "Jennifer Lawrence",
@@ -93,12 +88,7 @@ const actors = [
       }  else {
         return false;
       };
-    },
-    getActorByName: function(param){
-      if(this.name == param){
-        return param;
-    };
-  },
+  }
   },
   sam = {
     name: "Samuel L. Jackson",
@@ -113,12 +103,7 @@ const actors = [
       }  else {
         return false;
       };
-    },
-      getActorByName: function(param){
-        if(this.name == param){
-          return param;
-      };
-    },
+    }
   },
   meryl = {
     name: "Meryl Streep",
@@ -133,12 +118,7 @@ const actors = [
       }  else {
         return false;
       };
-    },
-    getActorByName: function(param){
-      if(this.name == param){
-        return param;
-    };
-  },
+  }
   },
   jcho = {
     name: "John Cho",
@@ -153,24 +133,38 @@ const actors = [
       }  else {
         return false;
     };
-  },
-  getActorByName: function(param){
-    if(this.name == param){
-      return param;
-  };
-},
+}
 },
 
 ];
 
-console.log (leo.getActorByName('Leonardo DiCaprio'));
-console.log (jlaw.getActorByName('Jennifer Lawrence'));
-console.log (jcho.getActorByName('John Cho'));
-console.log (meryl.getActorByName('Meryl Streep'));
+function getActorByName(name){
+  for(let i = 0; i < actors.length; i++ ){
+    if(actors[i].name == name){
+      return name;
+    }
+  }
+};
+
+let sum = 0;
+function getAverageAge(){
+  for(let i = 0; i < actors.length; i++ ){
+    sum += parseInt(actors[i].age);
+    }
+    return sum/actors.length;
+
+};
+
+console.log (getActorByName('Leonardo DiCaprio'));
+console.log (getActorByName('Jennifer Lawrence'));
+console.log (getActorByName('John Cho'));
+console.log (getActorByName('Meryl Streep'));
 
 console.log (jlaw.hasMoreOscarsThan(jcho));
 console.log (jlaw.hasMoreOscarsThan(meryl));
 console.log (leo.hasMoreOscarsThan(jlaw));
+
+console.log(getAverageAge());
 
 meryl.hello();
 leo.hello();
