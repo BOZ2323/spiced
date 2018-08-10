@@ -55,7 +55,7 @@ let jlaw;
 let sam;
 let meryl;
 let leo;
-let jchow;
+let jcho;
 
 
 
@@ -74,12 +74,12 @@ const actors = [
         return false;
       };
     },
-    // getActorByName: function(param){
-    //   if(myObj.name == param){
-    //     return param;
-    // };
+    getActorByName: function(param){
+      if(this.name == param){
+        return param;
+    };
   },
-  
+},
   jlaw = {
     name: "Jennifer Lawrence",
     age: "25",
@@ -93,7 +93,12 @@ const actors = [
       }  else {
         return false;
       };
-    }
+    },
+    getActorByName: function(param){
+      if(this.name == param){
+        return param;
+    };
+  },
   },
   sam = {
     name: "Samuel L. Jackson",
@@ -108,7 +113,12 @@ const actors = [
       }  else {
         return false;
       };
-    }
+    },
+      getActorByName: function(param){
+        if(this.name == param){
+          return param;
+      };
+    },
   },
   meryl = {
     name: "Meryl Streep",
@@ -123,9 +133,14 @@ const actors = [
       }  else {
         return false;
       };
-    }
+    },
+    getActorByName: function(param){
+      if(this.name == param){
+        return param;
+    };
   },
-  jchow = {
+  },
+  jcho = {
     name: "John Cho",
     age: "43",
     numOscars: 0,
@@ -138,17 +153,22 @@ const actors = [
       }  else {
         return false;
     };
-  }
   },
+  getActorByName: function(param){
+    if(this.name == param){
+      return param;
+  };
+},
+},
 
 ];
 
-// leo = getActorByName('Leonardo DiCaprio');
-// var jlaw = getActorByName('Jennifer Lawrence');
-// var jcho = getActorByName('John Cho');
-// var meryl = getActorByName('Meryl Streep');
+console.log (leo.getActorByName('Leonardo DiCaprio'));
+console.log (jlaw.getActorByName('Jennifer Lawrence'));
+console.log (jcho.getActorByName('John Cho'));
+console.log (meryl.getActorByName('Meryl Streep'));
 
-console.log (jlaw.hasMoreOscarsThan(jchow));
+console.log (jlaw.hasMoreOscarsThan(jcho));
 console.log (jlaw.hasMoreOscarsThan(meryl));
 console.log (leo.hasMoreOscarsThan(jlaw));
 
