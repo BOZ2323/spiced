@@ -74,11 +74,12 @@ const actors = [
         return false;
       };
     },
-    getActorByName: function(param){
-      if(myObj.name == param){
-        return param;
-    };
+    // getActorByName: function(param){
+    //   if(myObj.name == param){
+    //     return param;
+    // };
   },
+  
   jlaw = {
     name: "Jennifer Lawrence",
     age: "25",
@@ -139,10 +140,10 @@ const actors = [
     };
   }
   },
-};
+
 ];
 
-leo = getActorByName('Leonardo DiCaprio');
+// leo = getActorByName('Leonardo DiCaprio');
 // var jlaw = getActorByName('Jennifer Lawrence');
 // var jcho = getActorByName('John Cho');
 // var meryl = getActorByName('Meryl Streep');
