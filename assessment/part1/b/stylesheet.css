@@ -2,10 +2,10 @@
 See index.html for instructions.
 */
 #box_one {
-    position: relative;
+    position: fixed;
     width: 200px;
     height: 200px;
-    background: red;
+    background: grey;
 }
 #box_one #small_one{
     position: absolute;
@@ -13,19 +13,50 @@ See index.html for instructions.
     height: 50%;
     top: 0px;
     right: 0px;
-    background: green;
+    background: #ff9933;
 }
 #box_two {
-    position: relative;
+    position: fixed;
+    left: 212px;
     width: 200px;
     height: 200px;
-    background: blue;
+    background: black;
 }
 #box_two #small_two{
     position: absolute;
     width: 50%;
     height: 50%;
-    top: 0px;
+    top: 100px;
     right: 0px;
     background: yellow;
+}
+#box_three {
+    position: fixed;
+    left: 416px;
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+#box_three #small_three{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 0px;
+    left: 0px;
+    background: green;
+}
+#box_four {
+    position: fixed;
+    left: 621px;
+    width: 200px;
+    height: 200px;
+    background: #990099;
+}
+#box_four #small_four{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0px;
+    right: 100px;
+    background: #ffcccc;
 }
