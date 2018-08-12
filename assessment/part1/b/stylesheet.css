@@ -1,3 +1,31 @@
 /*
 See index.html for instructions.
 */
+#box_one {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+#box_one #small_one{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0px;
+    right: 0px;
+    background: green;
+}
+#box_two {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+#box_two #small_two{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0px;
+    right: 0px;
+    background: yellow;
+}
